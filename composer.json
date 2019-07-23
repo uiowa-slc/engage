@@ -11,7 +11,8 @@
         "md/division-analytics": "1.*",
         "md/uiowa-bar": "*",
         "gorriecoe/silverstripe-webfonts" : "*",
-        "jonom/silverstripe-betternavigator" : "*"
+        "jonom/silverstripe-betternavigator" : "*",
+        "silverstripe/blog": "^3.3"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7"
