@@ -1,4 +1,4 @@
-<% include Banner %>
+<% include Header %>
 
 <div class="blog-entry content-container col-sm">
 	<article>
