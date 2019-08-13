@@ -10,6 +10,7 @@
         "md/saml": "dev-md",
         "md/division-analytics": "1.*",
         "md/uiowa-bar": "*",
+        "md/deploy-helper": "*",
         "gorriecoe/silverstripe-webfonts" : "*",
         "jonom/silverstripe-betternavigator" : "*",
         "silverstripe/blog": "^3.3",
@@ -56,6 +57,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/StudentLifeMarketingAndDesign/uiowa-bar"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/deploy-helper"
         },
         {
             "type": "vcs",
