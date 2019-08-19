@@ -1,8 +1,11 @@
-@import "bootstrap/scss/functions";
-
+/* Configuration
+-------------------------------------------*/
 @import "variables";
-@import "bootstrap/scss/variables";
 
+/* Bootstrap
+-------------------------------------------*/
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
 @import "bootstrap/scss/mixins";
 @import "bootstrap/scss/root";
 @import "bootstrap/scss/reboot";
@@ -37,16 +40,20 @@
 @import "bootstrap/scss/utilities";
 @import "bootstrap/scss/print";
 
+/* Plugins
+-------------------------------------------*/
 @import "flickity/css/flickity";
 @import "magnific-popup/src/css/main";
 
-
+/* Division Top Bar
+--------------------------------------------*/
 @import "uiowa-bar";
+
 
 @import "mixins/remcalc";
 
-
+/* Layout
+-------------------------------------------*/
 @import "components/header";
 @import "components/footer";
-
 @import "layouts/homepage";
