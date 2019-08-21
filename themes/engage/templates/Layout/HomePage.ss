@@ -1,32 +1,31 @@
 <% include Header %>
 
 <main role="main">
-    <div class="hero">
-        <div class="hero__one d-flex align-items-center">
-            <div>
-                <span class="sec">Hawkeye Engage</span>
-                <h2 class="display-4">Helping Students Become Better Leaders</h2>
-                <p class="lead">Lorem ipsum dolor sit amet consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, torto mauris, condimentum nibh, ut fementum massa justo sit amet.</p>
-                <a href="#" class="btn btn-warning btn-lg mt-4">Log In</a>
-            </div>
-        </div>
-        <div class="hero__two">
-            <div class="main-carousel">
-                <div class="carousel-cell">
-                    <img src="$ThemeDir/dist/images/img-2.png" alt="">
-                </div>
-                <div class="carousel-cell">
-                    <img src="$ThemeDir/dist/images/img-1.jpg" alt="">
-                </div>
-                <div class="carousel-cell">
-                    <img src="$ThemeDir/dist/images/img-3.jpg" alt="">
+    <div class="container-flud hero">
+        <div class="row no-gutters">
+            <div class="col-md d-flex align-items-center">
+                <div class="hero__body">
+                    <span class="sec">Hawkeye Engage</span>
+                    <h2 class="display-4">Helping Students Become Better Leaders</h2>
+                    <p class="lead">The Hawkeye Engage Tool will enable UI students to explore, plan, and track their significant leaning experiences on campus, particularly those that may occur outside the classroom.</p>
+                    <a href="#" class="btn btn-warning btn-lg mt-4">Sign In</a>
                 </div>
             </div>
-
+            <div class="col-md">
+                <div class="main-carousel">
+                    <div class="carousel-cell">
+                        <img src="$ThemeDir/dist/images/img-2.png" alt="">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="$ThemeDir/dist/images/img-1.jpg" alt="">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="$ThemeDir/dist/images/img-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <%-- <br /><br /><br />
-    <img src="$ThemeDir/dist/images/fb.jpg" alt=""> --%>
 
     <div class="ways-to-engage">
         <div class="container">

@@ -6,7 +6,8 @@ $(document).ready(function() {
         cellAlign: 'left',
         contain: true,
         prevNextButtons: false,
-        imagesLoaded: true
+        imagesLoaded: true,
+        autoPlay: true
     });
 
 });
