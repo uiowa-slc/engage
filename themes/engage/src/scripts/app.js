@@ -10,4 +10,13 @@ $(document).ready(function() {
         autoPlay: true
     });
 
+    $('.test').flickity({
+        // options
+        cellAlign: 'left',
+        contain: true,
+        prevNextButtons: false,
+        imagesLoaded: true,
+        autoPlay: false
+    });
+
 });

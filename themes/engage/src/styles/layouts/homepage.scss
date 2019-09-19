@@ -35,7 +35,7 @@ img {
 .main-carousel {
     margin-bottom: -50px;
 }
-.carousel-cell {
+.main-carousel .carousel-cell {
     width: 550px;
     margin-right: 20px;
     & img {
@@ -53,20 +53,44 @@ img {
 
 
 // Competencies
-.card-grid {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-}
-.card-grid .card {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
-    transition: box-shadow 0.3s ease-in-out;
-}
-.card-grid .card:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+.competencies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__card {
+        width: 100%;
+        margin: 1%;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
+        transition: box-shadow 0.3s ease-in-out;
+        &:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+        }
+        @include media-breakpoint-up(sm) {
+            width: 48%;
+        }
+        @include media-breakpoint-up(md) {
+            width: 31%;
+        }
+        @include media-breakpoint-up(lg) {
+            width: 23%;
+        }
+    }
 }
 
-// Profile
+.card-body img {
+    background-color: $black;
+    padding: 8px;
+    border-radius: 7px;
+}
+.competencies .card-footer a {
+    color: $black;
+}
+.competencies .card-title a {
+    color: $black;
+    text-decoration: underline;
+}
+
+// Testimonials
 .profile {
     background: $black url(../images/zigzag.gif) repeat top left;
     color: #fff;
@@ -105,6 +129,10 @@ img {
         color: $highlight;
     }
 }
+.test .carousel-cell {
+    width: 100%;
+}
+
 
 // Ways to Enage
 .vd-bg::before,
@@ -144,4 +172,19 @@ img {
     top: -6%;
     bottom: auto;
     right: auto;
+}
+.engage {
+    &__content p {
+        font-size: $font-size-base * 1.25;
+        font-weight: 300;
+    }
+    &__content ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        & li {
+            border-top: 1px solid #ddd;
+            padding: 12px 20px;
+        }
+    }
 }
