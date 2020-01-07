@@ -63,23 +63,33 @@
 
     <% if $Testimonials %>
         <div class="container">
+            <div class="profile">
             <% loop $Testimonials %>
-                <div class="profile">
-                    <div class="row ">
-                        <div class="col-lg-6">
-                            <img src="$MainImage.Fill(800, 533).URL" alt="$Title" class="profile__img">
-                        </div>
-                        <div class="col-lg-6 align-items-center d-flex">
-                            <blockquote class="profile__blockquote">
-                                $Content
-                                <footer>— $Title</footer>
-                            </blockquote>
-                        </div>
+                <div class="profile__cell">
+                    <div class="profile__img">
+                        <img src="$MainImage.Fill(800, 533).URL" alt="$Title">
+                    </div>
+                    <div class="profile__quote">
+                        <blockquote class="profile__blockquote">
+                            $Content
+                            <footer>— $Title</footer>
+                        </blockquote>
                     </div>
                 </div>
             <% end_loop %>
+            </div>
         </div>
     <% end_if %>
+
+<%-- <div class="row ">
+    <div class="col-lg-6">
+        <img src="$MainImage.Fill(800, 533).URL" alt="$Title" class="profile__img">
+    </div>
+    <div class="col-lg-6 align-items-center d-flex">
+
+    </div>
+</div> --%>
+
 
     <div class="container">
         <div class="row">

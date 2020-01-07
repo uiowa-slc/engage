@@ -6,16 +6,15 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Faculty &amp; Staff</a>
-                </li>
+                <% loop $Menu(1) %>
+                    <li class="$LinkingMode nav-item<% if $isCurrent || $isSection %> active<% end_if %>">
+                        <a class="nav-link" href="$Link" title="$Title.XML">$MenuTitle.XML</a>
+                    </li>
+		        <% end_loop %>
             </ul>
-            <div class="navbar-text">
+            <!-- <div class="navbar-text">
                 <a href="#" class="btn btn-outline-dark">Log In</a>
-            </div>
+            </div> -->
         </div>
     </nav>
 </header>

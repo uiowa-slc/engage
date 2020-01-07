@@ -2,9 +2,9 @@
 
 
 <div class="container">
-	<div class="row">
-		<div class=" col-sm px-lg-0 content-container" role="main">
-			<article>
+	<div class="row justify-content-md-center">
+		<div class=" col-md-10" role="main">
+			<article class="py-5">
 				<h1>$Title</h1>
 				<div class="content">$Content</div>
 				<%--<% include MagnificExample %> -- %>

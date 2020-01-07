@@ -52,7 +52,8 @@ img {
 }
 
 
-// Competencies
+/* Competencies
+=========================================== */
 .competencies {
     display: flex;
     flex-wrap: wrap;
@@ -90,16 +91,36 @@ img {
     text-decoration: underline;
 }
 
-// Testimonials
+/* Testimonials
+=========================================== */
 .profile {
     background: $black url(../images/zigzag.gif) repeat top left;
     color: #fff;
     padding: 2em 0;
+    &__cell {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        @include media-breakpoint-up(lg) {
+            flex-direction: row;
+        }
+    }
     &__img {
         padding: 1em;
+        width: 100%;
         @include media-breakpoint-up(lg) {
-            margin-left: -10%;
             padding: 0;
+            width: 47%;
+        }
+    }
+    &__quote {
+        padding: 1em;
+        position: relative;
+        width: 100%;
+        @include media-breakpoint-up(lg) {
+            padding: 0;
+            width: 47%;
         }
     }
     @include media-breakpoint-up(lg) {
@@ -107,34 +128,51 @@ img {
     }
 }
 .profile__blockquote {
-    padding: 1em 2em 1em;
+    padding: 1em;
     & p {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 300;
         quotes: "“" "”" "‘" "’";
         &:before {
             content: open-quote;
             font-size: 300px;
             position: absolute;
-            top: -20px;
-            left: -20px;
+            top: -16px;
+            left: -16dfdfsapx;
             line-height: 1;
             opacity: .2;
         }
         @include media-breakpoint-up(lg) {
-            font-size: 30px;
+            font-size: 28px;
         }
+    }
+    @include media-breakpoint-up(lg) {
+        padding: 1em 3em 1em;
     }
     & footer {
         color: $highlight;
     }
 }
-.test .carousel-cell {
-    width: 100%;
+// Flickity page dots
+.profile .flickity-page-dots {
+  bottom: 25px;
+}
+.profile .flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: transparent;
+    border: 2px solid white;
+}
+/* fill-in selected dot */
+.profile .flickity-page-dots .dot.is-selected {
+    background: white;
 }
 
 
-// Ways to Enage
+
+/* Ways to Enage
+=========================================== */
 .vd-bg::before,
 .vd-bg::after {
     @include media-breakpoint-down(md) {

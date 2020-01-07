@@ -10,7 +10,7 @@ $(document).ready(function() {
         autoPlay: true
     });
 
-    $('.test').flickity({
+    $('.profile').flickity({
         // options
         cellAlign: 'left',
         contain: true,
