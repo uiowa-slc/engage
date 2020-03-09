@@ -5,14 +5,14 @@
     "require": {
         "php": ">=5.6.0",
         "silverstripe/recipe-plugin": "^1.2",
-        "silverstripe/recipe-cms": "4.4.1@stable",
+        "silverstripe/recipe-cms": "4.5.*@stable",
         "md/ac-json-events": "dev-ss4.x-ui",
         "md/saml": "dev-md",
         "md/division-analytics": "1.*",
         "md/uiowa-bar": "*",
         "md/deploy-helper": "*",
-        "gorriecoe/silverstripe-webfonts" : "*",
-        "jonom/silverstripe-betternavigator" : "*",
+        "gorriecoe/silverstripe-webfonts": "*",
+        "jonom/silverstripe-betternavigator": "*",
         "silverstripe/blog": "^3.3",
         "md/silverstripe-maintenance-mode": "dev-master",
         "undefinedoffset/sortablegridfield": "^2.0"
@@ -39,7 +39,6 @@
             "install.php",
             "web.config"
         ]
-
     },
     "config": {
         "process-timeout": 600
