@@ -49,11 +49,16 @@
 --------------------------------------------*/
 @import "uiowa-bar";
 
-
+/* Mixins
+------------------------------------------*/
 @import "mixins/remcalc";
+
+/* Components
+------------------------------------------*/
+@import "components/sidebar";
+@import "components/header";
+@import "components/footer";
 
 /* Layout
 -------------------------------------------*/
-@import "components/header";
-@import "components/footer";
 @import "layouts/homepage";
