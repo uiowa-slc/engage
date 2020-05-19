@@ -48,7 +48,7 @@
                         </div>
                         <div class="col-md-5 <% if $Even %>order-md-1<% else %>offset-lg-1<% end_if %>">
                             <div class="vd-bg">
-                                <video width="100%" controls playsinline="" autoplay loop>
+                                <video width="100%" controls playsinline="">
                                     <source src="$Video.URL" type="video/mp4">
                                     Your browser does not support HTML5 video.
                                 </video>
