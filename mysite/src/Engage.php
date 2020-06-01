@@ -15,12 +15,13 @@ class Engage extends DataObject
         'Content' => 'HTMLText',
     ];
     private static $has_one = array(
-
-        "Video" => File::class,
+        'Photo' => Image::class,
+        'Video' => File::class,
 
     );
 
     private static $owns = array(
+        'Photo',
         'Video'
     );
 
@@ -33,6 +34,7 @@ class Engage extends DataObject
 
             $fields->addFieldToTab('Root.Main', new TextField('Title'));
             $fields->addFieldToTab('Root.Main', new UploadField('Video', 'Video'));
+            $fields->addFieldToTab('Root.Main', new UploadField('Photo', 'Video Poster Image'));
             $fields->addFieldToTab('Root.Main', new HTMLEditorField('Content'));
 
             return $fields;

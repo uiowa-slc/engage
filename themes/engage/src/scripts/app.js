@@ -7,7 +7,7 @@ $(document).ready(function() {
         contain: true,
         prevNextButtons: false,
         imagesLoaded: true,
-        autoPlay: true
+        autoPlay: false
     });
 
     $('.profile').flickity({

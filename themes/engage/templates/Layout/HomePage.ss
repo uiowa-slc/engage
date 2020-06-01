@@ -40,15 +40,15 @@
             <% if $Engages %>
                 <% loop $Engages %>
                     <div class="row engage">
-                        <div class="col-md-6 d-flex align-items-center <% if $Even %>offset-md-1 order-md-2<% end_if %>">
+                        <div class="col-lg-6 d-flex align-items-center <% if $Even %>offset-lg-1 order-lg-2<% end_if %>">
                             <div>
                                 <h2>$Title</h2>
                                 <div class="engage__content">$Content</div>
                             </div>
                         </div>
-                        <div class="col-md-5 <% if $Even %>order-md-1<% else %>offset-lg-1<% end_if %>">
+                        <div class="col-lg-5 <% if $Even %>order-lg-1<% else %>offset-lg-1<% end_if %>">
                             <div class="vd-bg">
-                                <video width="100%" controls playsinline="">
+                                <video width="100%" controls playsinline="" <% if $Photo %>poster="$Photo.Fill(710, 400).URL"<% end_if %> >
                                     <source src="$Video.URL" type="video/mp4">
                                     Your browser does not support HTML5 video.
                                 </video>
